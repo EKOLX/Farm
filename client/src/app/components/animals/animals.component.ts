@@ -26,6 +26,7 @@ export class AnimalsComponent implements OnInit {
 
   onCreate(): void {
     this.animalService.createAnimal(this.animal).subscribe(() => {
+      this.animal.name = '';
       this.loadAnimals();
     });
   }

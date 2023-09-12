@@ -29,6 +29,9 @@ button {
   border-radius: 5px;
   margin-inline: 5px;
 }
+button:disabled {
+  background-color: gray;
+}
 .button-submit {
   background-color: rgb(144, 68, 68);
 }

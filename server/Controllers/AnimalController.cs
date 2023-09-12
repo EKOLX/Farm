@@ -26,7 +26,7 @@ public class AnimalController: ControllerBase
     public ActionResult Create(Animal animal)
     {
         var existingAnimal = _repository.GetByName(animal.Name);
-        if (existingAnimal != null)
+        if (string.IsNullOrWhiteSpace(animal.Name) || existingAnimal != null)
         {
             return Conflict("Animal with the same name already exists.");
         }

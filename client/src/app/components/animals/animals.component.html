@@ -1,0 +1,27 @@
+<div>
+  <div class="block">
+    <h3>Create a new animal</h3>
+    <label for="name">Animal name: </label>
+    <input id="name" [(ngModel)]="animal.name" placeholder="name" />
+    <button type="button" (click)="onCreate()" class="button-submit">
+      Create
+    </button>
+  </div>
+
+  <div *ngIf="animals.length > 0; else noAnimals" class="block">
+    <h3>My Animals</h3>
+    <ul>
+      <li *ngFor="let animal of animals">
+        <label>{{ animal.name }}</label>
+        <button
+          type="button"
+          (click)="onDelete(animal.id)"
+          class="button-remove"
+        >
+          Delete
+        </button>
+      </li>
+    </ul>
+  </div>
+  <ng-template #noAnimals>You don't have any animals yet.</ng-template>
+</div>

@@ -1,0 +1,49 @@
+body {
+  margin: 2em;
+}
+
+h1 {
+  color: brown;
+  border-bottom: 3px solid brown;
+  margin: 20px 0px 40px 0px;
+}
+h3 {
+  color: rgb(144, 68, 68);
+}
+
+label {
+  font-size: 20px;
+}
+
+input {
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  border: 1px solid gray;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  margin-inline: 5px;
+}
+.button-submit {
+  background-color: rgb(144, 68, 68);
+}
+.button-remove {
+  background-color: crimson;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  margin-bottom: 5px;
+}
+
+.block {
+  margin-bottom: 35px;
+}
